@@ -181,25 +181,33 @@ emailInput.addEventListener('keyup', e =>{
 activitiesDiv.addEventListener('change', e=> {
   if(activitiesCheckboxes[1].firstElementChild.checked){
     activitiesCheckboxes[3].className = 'disabled'
+    activitiesCheckboxes[3].firstElementChild.disabled = true;
   } else {
     activitiesCheckboxes[3].className = ''
+    activitiesCheckboxes[3].firstElementChild.disabled = false;
   }
 
   if(activitiesCheckboxes[3].firstElementChild.checked){
     activitiesCheckboxes[1].className = 'disabled'
+    activitiesCheckboxes[1].firstElementChild.disabled = true;
   } else{
     activitiesCheckboxes[1].className = ''
+    activitiesCheckboxes[1].firstElementChild.disabled = false;
   }
 
   if(activitiesCheckboxes[2].firstElementChild.checked){
     activitiesCheckboxes[4].className = 'disabled'
+    activitiesCheckboxes[4].firstElementChild.disabled = true;
   } else {
     activitiesCheckboxes[4].className = ''
+    activitiesCheckboxes[4].firstElementChild.disabled = false;
   };
 
   if(activitiesCheckboxes[4].firstElementChild.checked){
     activitiesCheckboxes[2].className = 'disabled'
+    activitiesCheckboxes[2].firstElementChild.disabled = true;
   } else {
     activitiesCheckboxes[2].className = ''
+    activitiesCheckboxes[2].firstElementChild.disabled = false;
   }
 });
