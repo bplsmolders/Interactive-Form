@@ -75,7 +75,7 @@ activitiesDiv.addEventListener("change", e =>{
 // The function underneath displays the right payment info, based on the user's selection
 paypalDiv.style.display='none';
 bitcoinDiv.style.display='none';
-creditcardDiv.style.display='none';
+// creditcardDiv.style.display='none';
 paymentOptions.addEventListener("change", e => {
   if(paymentOptions.value === "credit-card"){
     creditcardDiv.style.display='block';
